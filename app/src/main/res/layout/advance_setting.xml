@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textSet"
+        android:text="摄像机参数设置"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:id="@+id/advance_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:background="@drawable/img_btn_bg"
+        android:padding="10dp"/>
+       <!-- android:src="@mipmap/delete"-->
+
+    <View
+        android:id="@+id/fengexian"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorview"/>
+
+    <TextView
+        android:id="@+id/fangdou_text"
+        android:layout_below="@+id/fengexian"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/small_textSet"
+        android:padding="5dp"
+        android:text="图像防抖："/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignRight="@+id/fangdou_text"
+        android:layout_alignBaseline="@+id/fangdou_text"
+        android:id="@+id/fangdou_switch" />
+
+    <TextView
+        android:id="@+id/kuandongtai_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fangdou_text"
+        android:text="宽动态："
+        android:padding="5dp"
+        style="@style/small_textSet"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignRight="@+id/kuandongtai_text"
+        android:layout_alignBaseline="@+id/kuandongtai_text"
+        android:id="@+id/kuandongtai_switch" />
+
+    <TextView
+        android:id="@+id/qiangguangyizhi_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kuandongtai_text"
+        android:text="强光抑制："
+        android:padding="5dp"
+        style="@style/small_textSet"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignRight="@+id/qiangguangyizhi_text"
+        android:layout_alignBaseline="@+id/qiangguangyizhi_text"
+        android:id="@+id/qiangguangyizhi_switch" />
+    <TextView
+        android:id="@+id/touwu_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qiangguangyizhi_text"
+        android:text="透雾："
+        android:padding="5dp"
+        style="@style/small_textSet"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignRight="@+id/touwu_text"
+        android:layout_alignBaseline="@+id/touwu_text"
+        android:id="@+id/touwu_switch" />
+
+    <TextView
+        android:id="@+id/gaoganguang_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/touwu_text"
+        android:padding="5dp"
+        android:text="高感光："
+        style="@style/small_textSet"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignRight="@+id/gaoganguang_text"
+        android:layout_alignBaseline="@+id/gaoganguang_text"
+        android:id="@+id/gaoganguang_switch" />
+
+
+</RelativeLayout>

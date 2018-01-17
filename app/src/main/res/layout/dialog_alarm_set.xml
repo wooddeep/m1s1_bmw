@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/nothing"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_container"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="倾覆警报设置"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/preview_textsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当俯仰角度超过倾覆角度时，机器停止动作并将发出警报信号！ "
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/small_preview_textsize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="倾覆角度设置为："
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/preview_textsize" />
+            <EditText
+                android:id="@+id/alarm_setEdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="50dp"
+                android:background="@drawable/bg_edt"
+                android:padding="5dp"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/preview_textsize"
+                android:gravity="center"
+                android:text="11"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/alarm_sureTv"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="确 定"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/preview_textsize"
+            android:background="@drawable/bg_btn"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

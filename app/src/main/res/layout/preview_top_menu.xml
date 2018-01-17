@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="5dp"
+    android:id="@+id/top_menu_container">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+<!--
+
+        <LinearLayout
+            style="@style/main_linearlayout"
+            android:layout_weight="1">
+-->
+
+
+            <FrameLayout
+                android:id="@+id/record"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="5dp"
+                android:clickable="true"
+                android:background="@drawable/img_btn_bg"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/recordImg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:src="@mipmap/record"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="屏幕录像"
+                    android:textSize="7sp"
+                    android:textColor="@color/colorText"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/capture"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="5dp"
+                android:clickable="true"
+                android:background="@drawable/img_btn_bg"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:src="@mipmap/shot"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:text="屏幕截图"
+                    android:textSize="7sp"
+                    android:textColor="@color/colorText"/>
+            </FrameLayout>
+<!--
+            <ImageView
+                android:id="@+id/record"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@mipmap/record"
+                android:padding="5dp"
+                style="@style/preview_top_img" />
+            <ImageView
+                android:id="@+id/capture"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="13dp"
+                android:src="@mipmap/shot"
+                style="@style/preview_top_img" />
+            -->
+            <!--
+        </LinearLayout>
+-->
+
+        <FrameLayout
+            android:id="@+id/turnZero"
+            style="@style/preview_top_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:src="@mipmap/zero"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="计米归零"
+                android:textSize="7sp"
+                android:textColor="@color/colorText"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/line_back"
+            style="@style/preview_top_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:src="@mipmap/juan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="自动收线"
+                android:textSize="7sp"
+                android:textColor="@color/colorText"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/alarm"
+            style="@style/preview_top_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:src="@mipmap/alarm"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="报警设置"
+                android:textSize="7sp"
+                android:textColor="@color/colorText"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/autoHozontal"
+            style="@style/preview_top_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:src="@mipmap/hozontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="自动水平"
+                android:textSize="7sp"
+                android:textColor="@color/colorText"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cameraChange"
+            style="@style/preview_top_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:src="@mipmap/camera_change"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="镜头切换"
+                android:textSize="7sp"
+                android:textColor="@color/colorText"/>
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/preview_top_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:clickable="false"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/preview_top_connect_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:src="@mipmap/disconnect"/>
+            <TextView
+                android:id="@+id/preview_top_connect_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="网络状态"
+                android:textSize="7sp"
+                android:textColor="@color/alarm_color"/>
+        </FrameLayout>
+
+        <!--
+
+        <ImageView
+            android:id="@+id/turnZero"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            style="@style/preview_top_img"
+            android:src="@mipmap/zero"/>
+
+        <ImageView
+            android:id="@+id/line_back"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            style="@style/preview_top_img"
+            android:src="@mipmap/juan"/>
+
+        <ImageView
+            android:id="@+id/alarm"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            style="@style/preview_top_img"
+            android:src="@mipmap/alarm"/>
+
+        <ImageView
+            android:id="@+id/autoHozontal"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            style="@style/preview_top_img"
+            android:src="@mipmap/hozontal"/>
+
+        <ImageView
+            android:id="@+id/cameraChange"
+            style="@style/preview_top_img"
+            android:src="@mipmap/camera_change"/>
+
+            -->
+
+
+        <LinearLayout
+            style="@style/main_linearlayout"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/zoom_sub"
+                android:src="@mipmap/sub"
+                style="@style/preview_top_ibtn"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="聚焦"
+                android:gravity="center"
+                android:textSize="@dimen/preview_textsize"
+                android:textColor="@color/colorText"/>
+            <ImageButton
+                android:id="@+id/zoom_add"
+                android:src="@mipmap/add"
+                style="@style/preview_top_ibtn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/main_linearlayout"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/size_sub"
+                android:src="@mipmap/sub"
+                style="@style/preview_top_ibtn"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="变倍"
+                android:gravity="center"
+                android:textSize="@dimen/preview_textsize"
+                android:textColor="@color/colorText"/>
+            <ImageButton
+                android:id="@+id/size_add"
+                style="@style/preview_top_ibtn"
+                android:src="@mipmap/add" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/battery"
+            style="@style/preview_top_img"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingBottom="13dp"
+            android:paddingTop="0dp"
+            android:src="@mipmap/battery0"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

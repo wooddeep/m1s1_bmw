@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.FileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/pic_menu"
+        android:layout_alignParentTop="true"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="200dp"
+                    android:layout_height="50dp">
+
+                    <EditText
+                        android:id="@+id/search_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_edt"
+                        android:hint="搜索"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="40dp"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorText"
+                        android:textCursorDrawable="@color/colorText"
+                        android:imeOptions="flagNoExtractUi"
+                        android:textSize="@dimen/preview_textsize" />
+
+                    <ImageView
+                        android:id="@+id/search_btn"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:src="@mipmap/search" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/file_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/bg_edt"
+                    android:text="文件操作"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/preview_textsize">
+
+                </Button>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/picture_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pic_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/colorText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chooseAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/img_btn_bg"
+                android:gravity="center"
+                android:text="全选"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/preview_textsize" />
+
+            <TextView
+                android:id="@+id/cancelAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/img_btn_bg"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/preview_textsize" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

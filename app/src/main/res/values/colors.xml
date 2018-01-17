@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#282737</color>
+    <color name="btn_press">#50ff9900</color>
+    <color name="nothing">#00111111</color>
+    <color name="colorview">#99ff9900</color>
+    <color name="colorText">#ff9900</color>
+    <color name="seekbar">#939393</color>
+    <color name="spacerlayer">#242727</color>
+    <color name="half_spacerlayer">#40242727</color>
+    <color name="gray_10">#4e4e4e</color>
+    <color name="toast_tv_color" >#ffffff</color>
+    <color name="bg_half" >#50282737</color>
+    <color name="alarm_color">#eb4f38</color>
+    <color name="alarm_bg">#50eb4f38</color>
+    <color name="alarm_unpress">#80eb4f38</color>
+
+
+</resources>

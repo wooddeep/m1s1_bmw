@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:padding="5dp"
+    android:id="@+id/alarm_container">
+    <FrameLayout
+        android:layout_width="95dp"
+        android:layout_height="90dp">
+        <ImageView
+            android:id="@+id/alarm_cancle"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/cancle"
+            android:clickable="true"
+            android:background="@drawable/alarm_btn_bg"
+            android:padding="3dp"
+            android:layout_gravity="top|right"/>
+
+        <ImageView
+            android:layout_gravity="center|bottom"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/danger1" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/alarm_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:text="倾覆警报！"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        style="@style/textSet"
+        android:text="亮度设置"/>
+
+    <View
+        android:id="@+id/fengexianl"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/title"
+        android:background="@color/colorview"/>
+
+    <SeekBar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/fengexianl"
+        android:layout_marginTop="15dp"
+        android:id="@+id/screen_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorText</item>
+        <item name="colorPrimaryDark">@color/colorText</item>
+        <item name="colorAccent">@color/colorText</item>
+
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="all_Match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="all_Wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="width_Match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="height_Match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+    <style name="main_linearlayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">25.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>
+        <item name="android:minHeight">10.0dip</item>
+        <item name="android:thumb">@drawable/seebar_in</item>
+        <item name="android:thumbOffset">15.0dip</item>
+    </style>
+
+    <style name="MyLoadStyle">
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowContentOverlay">@null</item> <!-- 内容覆盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item> <!-- 窗口样式Dialog -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+
+    </style>
+
+    <style name="textSet">
+        <item name="android:textSize">@dimen/preview_textsize</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="small_textSet">
+        <item name="android:textSize">@dimen/small_preview_textsize</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="dialog_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_appear</item>
+        <item name="android:windowExitAnimation">@anim/dialog_disappear</item>
+    </style>
+
+    <style name="seekBar_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="myHorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/spacerlayer</item>
+    </style>
+    <style name="myVerticalLine">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/spacerlayer</item>
+    </style>
+
+
+    <style name="Setting_edt" parent="all_Wrap_content">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/Setting_edt</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+
+    <style name="Setting_sureTxt" parent="all_Match_parent">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/Setting_sureTxt</item>
+        <item name="android:background">@drawable/bg_tv_to_btn</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+
+    <style name="preview_seekBar" parent="Widget.SeekBar.Normal">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+    </style>
+
+    <style name="preview_imgTv_container" parent="all_Wrap_content">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="main_frameContainer" parent="all_Wrap_content">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/img_btn_bg</item>
+    </style>
+
+
+    <style name="mainText" parent="textSet">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="main_img">
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="main_img_first" parent="main_img">
+        <item name="android:layout_marginBottom">18dp</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">15dp</item>
+    </style>
+
+    <style name="preview_top_img">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/img_btn_bg</item>
+    </style>
+
+    <style name="preview_top_ibtn" parent="all_Wrap_content">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/img_btn_bg</item>
+
+    </style>
+
+
+</resources>

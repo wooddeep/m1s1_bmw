@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/updatedialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textSet"
+        android:text="是否升级App至版本 0.0"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:background="@drawable/img_btn_bg"/>
+
+    <View
+        android:id="@+id/fengexian"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/updatedialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorview"/>
+    <TextView
+        android:id="@+id/update_detail"
+        android:layout_below="@+id/fengexian"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/small_textSet"
+        android:text="描述：书法老师的反馈萨拉丁疯狂了斯拉夫斯基的"/>
+
+    <View
+        android:id="@+id/fengexian2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/update_detail"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorview"/>
+    <LinearLayout
+        android:id="@+id/btn_linear"
+        android:layout_below="@+id/fengexian2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/update_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="@drawable/img_btn_bg"
+            android:layout_weight="1"
+            style="@style/small_textSet"
+            android:gravity="center"
+            android:text="取消"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorview"/>
+        <TextView
+            android:id="@+id/update_sure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="@drawable/img_btn_bg"
+            android:layout_weight="1"
+            style="@style/small_textSet"
+            android:gravity="center"
+            android:text="确认"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

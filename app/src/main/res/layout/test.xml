@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:src="@mipmap/zero"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="计米归零"
+            android:textSize="7sp"
+            android:textColor="@color/colorText"/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/record"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="5dp"
+        android:clickable="true"
+        android:background="@drawable/img_btn_bg"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/recordImg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:src="@mipmap/record"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="屏幕录像"
+            android:textSize="7sp"
+            android:textColor="@color/colorText"/>
+    </FrameLayout>
+
+</LinearLayout>

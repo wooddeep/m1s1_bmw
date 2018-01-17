@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".view.ui.MainActivity">
+    <FrameLayout
+        style="@style/all_Match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/logo" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <FrameLayout
+                android:id="@+id/pre_view"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                style="@style/main_frameContainer">
+
+                <ImageView
+                    style="@style/main_img_first"
+                    android:src="@mipmap/preview1" />
+
+                <TextView
+                    android:layout_gravity="bottom|center"
+                    android:text="@string/main_preview"
+                    style="@style/mainText" />
+            </FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <FrameLayout
+                android:id="@+id/play_back"
+                style="@style/main_frameContainer">
+
+                <ImageView
+                    style="@style/main_img"
+                    android:src="@mipmap/playback1" />
+
+                <TextView
+                    style="@style/mainText"
+                    android:layout_gravity="bottom|center"
+                    android:text="@string/main_playback"/>
+            </FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <FrameLayout
+                android:id="@+id/picture"
+                style="@style/main_frameContainer">
+
+                <ImageView
+                    style="@style/main_img"
+                    android:src="@mipmap/picture1" />
+
+                <TextView
+                    android:layout_gravity="bottom|center"
+                    android:text="@string/main_picture"
+                    style="@style/mainText"/>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/view" />
+
+            <FrameLayout
+                android:id="@+id/environment_stat"
+                style="@style/main_frameContainer">
+
+                <ImageView
+                    style="@style/main_img"
+                    android:src="@mipmap/tongji" />
+
+                <TextView
+                    android:layout_gravity="bottom|center"
+                    android:text="@string/main_environment"
+                    style="@style/mainText"/>
+            </FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/setting"
+            android:layout_gravity="right"
+            android:background="@drawable/img_btn_bg"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

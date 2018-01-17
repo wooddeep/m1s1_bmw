@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="20dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/sys_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textSet"
+        android:text="系统信息"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:background="@drawable/img_btn_bg"/>
+
+    <View
+        android:id="@+id/fengexian"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/sys_title"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorview"/>
+    <TextView
+        android:id="@+id/xinghao_text"
+        android:layout_below="@+id/fengexian"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/small_textSet"
+        android:text="型号:"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/small_textSet"
+        android:layout_alignRight="@+id/xinghao_text"
+        android:layout_alignBaseline="@+id/xinghao_text"
+        android:layout_marginRight="20dp"
+        android:text="M1S1"/>
+
+    <TextView
+        android:id="@+id/banbenhao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xinghao_text"
+        android:text="版本号:"
+        style="@style/small_textSet"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/sys_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        style="@style/small_textSet"
+        android:layout_alignRight="@+id/banbenhao"
+        android:layout_alignBaseline="@+id/banbenhao"
+        android:text="0.0"/>
+
+    <TextView
+        android:id="@+id/shengchanshang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banbenhao"
+        android:text="生产商:"
+        style="@style/small_textSet"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/small_textSet"
+        android:layout_marginRight="10dp"
+        android:layout_alignRight="@+id/shengchanshang"
+        android:layout_alignBaseline="@+id/shengchanshang"
+        android:text="深圳博铭维智能科技有限公司"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="preview_textsize">20sp</dimen>
+    <dimen name="small_preview_textsize">16sp</dimen>
+    <dimen name="toast_tv_size" >11sp</dimen>
+    <dimen name="popup_light">15sp</dimen>
+    <dimen name="Setting_edt">12sp</dimen>
+    <dimen name="Setting_sureTxt">15sp</dimen>
+    <dimen name="player_choose_system">10sp</dimen>
+</resources>

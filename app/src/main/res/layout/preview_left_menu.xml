@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_menu_container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/top_menu_container">
+
+
+    <RelativeLayout
+        android:id="@+id/left_top_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/preview_left1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/preview_light"
+                style="@style/preview_imgTv_container">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="云台灯"
+                    android:textColor="@color/colorText"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/light_sb"
+                style="@style/preview_seekBar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preview_left2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/preview_left1"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/preview_light_far"
+                style="@style/preview_imgTv_container">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="前灯"
+                    android:textColor="@color/colorText"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/far_light_sb"
+                style="@style/preview_seekBar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preview_left3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/preview_left2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/preview_speed"
+                style="@style/preview_imgTv_container">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/speed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="速度"
+                    android:textColor="@color/colorText"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/speed_sb"
+                style="@style/preview_seekBar" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/left_top_menu"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/preview_up"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/img_btn_bg"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@mipmap/up" />
+
+        <TextView
+            android:id="@+id/push_high"
+            style="@style/seekBar_text"
+            android:layout_width="60dp"
+            android:gravity="center"
+            android:text="0cm" />
+
+        <ImageView
+            android:id="@+id/preview_down"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/img_btn_bg"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@mipmap/down" />
+    </LinearLayout>
+
+
+</RelativeLayout>
